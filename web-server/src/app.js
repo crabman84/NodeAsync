@@ -1,23 +1,47 @@
 'use strict';
 
+const path = require('path');
+
 const express = require('express');
 
+const publicDir = path.join(__dirname, '../public')
+
+console.log(__dirname);
+console.log(publicDir);
+
 const app = express();
+// const htmlHelp = path.join(__dirname, '../public/help.html')
 
-app.get ('', (req, res) => {
-    res.send('Hello express!')
-});
 
-app.get ('/help', (req, res) => {
-    res.send('Help express!')
-});
+//customize the server
+//treat this like a black box for now
+app.use(express.static(publicDir))
 
-app.get ('/about', (req, res) => {
-    res.send('About page!')
-});
+// app.get ('', (req, res) => {
+//     res.send()
+// });
+
+
+// app.use(express.static(publicDir));
+
+
+// app.get ('/help', (req, res) => {
+//     res.send(
+//         {
+//             name: 'crabMan',
+//             age: 2
+//         })
+// });
+
+// app.get ('/about', (req, res) => {
+//     res.send('<h1>About Page</h1>')
+// });
 
 app.get ('/weather', (req, res) => {
-    res.send('View Weather!')
+    res.send({
+        forecast: 'Flurry in the evening',
+        location: 'Boston'
+    })
 });
 
 // app.com
