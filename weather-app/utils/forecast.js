@@ -26,23 +26,23 @@ const geocode = require('./geocode');
 const forecast = (longitude, latitude, callback) => {
 
     const url = `https://api.darksky.net/forecast/a3d4cf0eef6d53207b87f52000794028/${latitude},${longitude}?lang=he`;
-    console.log(url);
-    request({url: url, json: true}, (errorWeather, response) =>{
+    // console.log(url);
+    request({url, json:true}, (errorWeather, {body: bodyWeather}) =>{
+        var {currently, timezone} = bodyWeather;
+        var {temperature, humidity} = currently;
 
         if(errorWeather){
             callback(errorWeather, 'Cannot connect to location services')
         }
-        else if(!response.body.currently || !response.body.currently.temperature || !response.body.currently.humidity){
+        else if(!currently || !currently.temperature || !currently.humidity){
             callback('Cannot get temperature or humidity of your location, try a different search', undefined)
         }
         else{
-            var weather = {
-                temperature: response.body.currently.temperature,
-                humidity: response.body.currently.humidity
-            };
-            var timezone = response.body.timezone;
+
+            // var timezone = response.body.timezone;
             console.log('Timezone: ', timezone);
-            callback(undefined, weather);
+
+            callback(undefined, {temperature, humidity});
         }
     })
 
