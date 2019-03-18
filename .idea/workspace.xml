@@ -2,16 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf391798-312e-433c-acbb-f0e32847e0e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web-server/public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-server/templates/about.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-server/templates/help.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-server/templates/index.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/public/img/weather.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/src/utils/forecast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/src/utils/geocode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/templates/partials/footer.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/templates/partials/header.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/templates/partials/nav.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/templates/views/404.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web-server/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web-server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-server/public/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-server/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-server/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/web-server/public/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-server/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/web-server/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-server/templates/about.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/web-server/templates/views/about.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-server/templates/help.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/web-server/templates/views/help.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-server/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/web-server/templates/views/index.hbs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +30,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web-server/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="400">
+              <caret line="82" column="19" lean-forward="true" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-server/src/utils/geocode.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-server/src/utils/forecast.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -47,7 +71,6 @@
         <option value="$PROJECT_DIR$/weather-app/geocode.js" />
         <option value="$PROJECT_DIR$/playground/5-es6-projects.js" />
         <option value="$PROJECT_DIR$/weather-app/utils/forecast.js" />
-        <option value="$PROJECT_DIR$/weather-app/app.js" />
         <option value="$PROJECT_DIR$/weather-app/utils/geocode.js" />
         <option value="$PROJECT_DIR$/playground/6-raw-http.js" />
         <option value="$PROJECT_DIR$/web-server/package.json" />
@@ -58,7 +81,16 @@
         <option value="$PROJECT_DIR$/web-server/views/about.hbs" />
         <option value="$PROJECT_DIR$/web-server/public/js/app.js" />
         <option value="$PROJECT_DIR$/web-server/views/help.hbs" />
+        <option value="$PROJECT_DIR$/web-server/templates/partials/footer.hbs" />
+        <option value="$PROJECT_DIR$/web-server/templates/partials/nav.hbs" />
+        <option value="$PROJECT_DIR$/web-server/templates/partials/header.hbs" />
         <option value="$PROJECT_DIR$/web-server/public/css/styles.css" />
+        <option value="$PROJECT_DIR$/web-server/templates/views/index.hbs" />
+        <option value="$PROJECT_DIR$/web-server/templates/views/about.hbs" />
+        <option value="$PROJECT_DIR$/web-server/templates/views/help.hbs" />
+        <option value="$PROJECT_DIR$/web-server/templates/views/404.hbs" />
+        <option value="$PROJECT_DIR$/weather-app/app.js" />
+        <option value="$PROJECT_DIR$/web-server/src/utils/forecast.js" />
         <option value="$PROJECT_DIR$/web-server/src/app.js" />
       </list>
     </option>
@@ -88,6 +120,11 @@
             <path>
               <item name="nodeAsync" type="b2602c69:ProjectViewProjectNode" />
               <item name="nodeAsync" type="462c0819:PsiDirectoryNode" />
+              <item name="weather-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodeAsync" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodeAsync" type="462c0819:PsiDirectoryNode" />
               <item name="web-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -95,6 +132,13 @@
               <item name="nodeAsync" type="462c0819:PsiDirectoryNode" />
               <item name="web-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodeAsync" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodeAsync" type="462c0819:PsiDirectoryNode" />
+              <item name="web-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -110,7 +154,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web-server/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web-server/public/img" />
+      <recent name="$PROJECT_DIR$/web-server/templates/views" />
       <recent name="$PROJECT_DIR$/weather-app/utils" />
     </key>
   </component>
@@ -136,12 +185,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552753326247</updated>
-      <workItem from="1552753327447" duration="24199000" />
+      <workItem from="1552753327447" duration="30301000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24199000" />
+    <option name="totallyTimeSpent" value="30301000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -157,15 +206,15 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12040134" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13979933" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" sideWeight="0.49968848" weight="0.32944915" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.6454849" weight="0.31174535" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50033444" side_tool="true" visible="true" weight="0.31779662" />
+      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.64481604" visible="true" weight="0.31144068" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.35518396" side_tool="true" weight="0.31144068" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49966556" visible="true" weight="0.31779662" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49966556" weight="0.31779662" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -176,6 +225,27 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.12040134" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.64481604" visible="true" weight="0.31144068" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.35518396" side_tool="true" visible="true" weight="0.31144068" />
+      <window_info anchor="bottom" id="Database Changes" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49968848" weight="0.32944915" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" sideWeight="0.49966556" weight="0.31779662" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.32947367" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -199,13 +269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -264,41 +327,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-server/public/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-server/templates/about.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-server/templates/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" selection-start-line="8" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-server/templates/help.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-server/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/templates/partials/nav.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/templates/partials/header.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/public/img/weather.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/public/img/download.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/templates/views/404.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/templates/views/about.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/templates/partials/footer.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/templates/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="29" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/public/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/templates/views/help.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/src/utils/geocode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/src/utils/forecast.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web-server/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="400">
+          <caret line="82" column="19" lean-forward="true" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
         </state>
       </provider>
     </entry>
